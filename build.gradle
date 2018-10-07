@@ -38,7 +38,7 @@ task mainJar(type: Jar){
 
 task Jar(type: Jar){
     manifest{
-        attributes 'Main-Class': 'A'
+        attributes 'Main-Class': 'StringUtilsExample'
     }
     baseName = 'all-in-one-jar'
     from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
